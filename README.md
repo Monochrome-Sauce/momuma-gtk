@@ -1,4 +1,4 @@
-# Momouma Gtk
+# Momuma Gtk
 
 MoMuMa (**M**ono's **M**usic **M**anager) is a simple GTKmm app for managing simple music playlists.  
 The project uses `libmpv` to gain its playback capabilities.
