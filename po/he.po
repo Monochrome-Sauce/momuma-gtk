@@ -1,0 +1,53 @@
+# Hebrew
+
+#: src/Application.cpp:91
+msgid "Choose playlist"
+msgstr "בחר רשימת שירים"
+
+#: src/Application.cpp:99
+msgid "Failed to retrieve playlists"
+msgstr "נכשל להחזיר את הרשימות"
+
+#: src/Application.cpp:195
+msgid "File"
+msgstr "קובץ"
+
+#: src/Application.cpp:233
+msgid "Quit"
+msgstr "סגור תוכנה"
+
+#: src/Application.cpp:236
+msgid "Open Playlist"
+msgstr "פתח רשימת שירים"
+
+#: src/Application.cpp:239
+msgid "Import Song"
+msgstr "יבא שיר"
+
+#: src/Application.cpp:342
+msgid "untitled"
+msgstr "חסר כותרת"
+
+#: src/Gui/AudioPlayerControls.cpp:17
+msgid "Loop playlist"
+msgstr "נגן בלולאה"
+
+#: src/Gui/AudioPlayerControls.cpp:18
+msgid "Next song"
+msgstr "שיר הבא"
+
+#: src/Gui/AudioPlayerControls.cpp:19
+msgid "Previous song"
+msgstr "שיר קודם"
+
+#: src/Gui/AudioPlayerControls.cpp:20
+msgid "Stop player"
+msgstr "עצור נגן"
+
+#: src/Gui/AudioPlayerControls.cpp:59
+msgid "Play song"
+msgstr "נגן שיר"
+
+#: src/Gui/AudioPlayerControls.cpp:73
+msgid "Pause song"
+msgstr "הפסק שיר"

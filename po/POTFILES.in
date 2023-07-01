@@ -1,0 +1,10 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+src/Application.cpp
+src/Gui/AudioPlayerControls.cpp
+src/Gui/ListChooserDialog.cpp
+src/Gui/MasterWindow.cpp
+src/Gui/PlaylistNotebook.cpp
+src/Gui/Slider.cpp
+src/Gui/VolumeButton.cpp
+src/Gui/functions.cpp

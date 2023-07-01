@@ -1,0 +1,53 @@
+# Russian
+
+#: src/Application.cpp:91
+msgid "Choose playlist"
+msgstr "Выберите список песен"
+
+#: src/Application.cpp:99
+msgid "Failed to retrieve playlists"
+msgstr "Не удалось получить списки песен"
+
+#: src/Application.cpp:195
+msgid "File"
+msgstr "Файл"
+
+#: src/Application.cpp:233
+msgid "Quit"
+msgstr "Выйти"
+
+#: src/Application.cpp:236
+msgid "Open Playlist"
+msgstr "Открыть список песен"
+
+#: src/Application.cpp:239
+msgid "Import Song"
+msgstr "Импортироваты песни"
+
+#: src/Application.cpp:342
+msgid "untitled"
+msgstr "без имени"
+
+#: src/Gui/AudioPlayerControls.cpp:17
+msgid "Loop playlist"
+msgstr "Циклический список песен"
+
+#: src/Gui/AudioPlayerControls.cpp:18
+msgid "Next song"
+msgstr "Следующая песня"
+
+#: src/Gui/AudioPlayerControls.cpp:19
+msgid "Previous song"
+msgstr "Предыдущая песня"
+
+#: src/Gui/AudioPlayerControls.cpp:20
+msgid "Stop player"
+msgstr "Остановить игрока"
+
+#: src/Gui/AudioPlayerControls.cpp:59
+msgid "Play song"
+msgstr "Играй песню"
+
+#: src/Gui/AudioPlayerControls.cpp:73
+msgid "Pause song"
+msgstr "Пауза песни"

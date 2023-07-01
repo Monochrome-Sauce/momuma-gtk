@@ -1,0 +1,3 @@
+[submodule "subprojects/mono-music-manager"]
+	path = subprojects/mono-music-manager
+	url = https://github.com/Monochrome-Sauce/mono-music-manager.git
