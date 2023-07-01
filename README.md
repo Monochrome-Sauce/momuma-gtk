@@ -1,7 +1,7 @@
 # Momouma Gtk
 
 MoMuMa (**M**ono's **M**usic **M**anager) is a simple GTKmm app for managing simple music playlists.  
-The project uses GStreamer to gain its playback capabilities.
+The project uses `libmpv` to gain its playback capabilities.
 
 Originally I wanted to write this in C, but chose to use C++ due to enhanced type safety (this is the first time I'm using Gtk).
 
@@ -13,7 +13,6 @@ Originally I wanted to write this in C, but chose to use C++ due to enhanced typ
 - glibmm >= 2.60 (library)
 - gtkmm >= 3.24 (library)
 - momuma (library)
-- youtube-dl (optional, library)
 
 ## Compiling
 
