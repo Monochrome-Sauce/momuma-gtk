@@ -137,6 +137,10 @@ Application::Application(void) :
 	m_menubar { Gio::Menu::create() }, m_window { },
 	m_pages { }, m_letSliderUpdate { false }
 {
+	if (!m_backend) {
+		throw std::runtime_error("Failed to initialize Momuma backend");
+	}
+	
 	Glib::set_application_name(_title);
 	
 	auto &player = m_backend.get_player();
