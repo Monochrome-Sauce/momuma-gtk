@@ -88,13 +88,13 @@ static void connect_timeout_signals(Momuma::MpvPlayer &player,
 
 [[nodiscard]] static inline
 std::optional<Glib::ustring> get_playlist_choice_from_user(
-	Gtk::Window &parent, Momuma::IDatabase &database
+	Gtk::Window &parent, Momuma::Database::Sqlite3 &database
 ) {
 	Gui::ListChooserDialog dialog(_("Choose playlist"), parent);
-	const auto cb = [&dialog](Glib::ustring playlist) -> Momuma::IDatabase::IterFlag
+	const auto cb = [&dialog](Glib::ustring playlist) -> Momuma::Database::IterFlag
 	{
 		dialog.append_value(std::move(playlist));
-		return Momuma::IDatabase::IterFlag::NEXT;
+		return Momuma::Database::IterFlag::NEXT;
 	};
 	
 	if (database.get_playlists(cb) < 0) {
@@ -351,7 +351,7 @@ bool Application::cb__window_keypress(const GdkEventKey *const event)
 		case GDK_KEY_p:
 		case GDK_KEY_P:
 		{
-			Momuma::IDatabase &db = m_backend.get_database();
+			auto &db = m_backend.get_database();
 			std::optional<Glib::ustring> playlistName = get_playlist_choice_from_user(m_window, db);
 			
 			if (playlistName.has_value()) {
@@ -393,7 +393,7 @@ void Application::cb__row_activated(const PageId id, const int rowIndex, Gui::No
 	
 	auto &player = m_backend.get_player();
 	if (id != m_pages.get_playing() || player.playlist_empty()) {
-		using IterFlag = Momuma::IDatabase::IterFlag;
+		using IterFlag = Momuma::Database::IterFlag;
 		spdlog::trace("1) Row activated");
 		
 		player.stop_playback();

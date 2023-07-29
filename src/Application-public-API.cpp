@@ -10,13 +10,13 @@ bool Application::add_playlist_to_view(const Glib::ustring &playlistName)
 	m_pages[id] = PageData { playlistName, false };
 	
 	const int items = m_backend.get_database().get_media_paths(playlistName,
-		[&notebook, id](fs::path p) -> Momuma::IDatabase::IterFlag
+		[&notebook, id](fs::path p) -> Momuma::Database::IterFlag
 		{
 			auto duration = chrono::duration_cast<chrono::seconds>(
 				Momuma::MpvPlayer::query_duration(p)
 			);
 			notebook.get_page(id).append_row({ p.filename().string(), duration });
-			return Momuma::IDatabase::IterFlag::NEXT;
+			return Momuma::Database::IterFlag::NEXT;
 		}
 	);
 	
