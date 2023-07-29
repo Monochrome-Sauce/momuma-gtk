@@ -101,10 +101,10 @@ momuma_dep = libmomuma_proj.get_variable('momuma_dep')
 i18n = import('i18n')
 
 if is_debug_build
-	package_localedir = meson.current_source_dir() / 'build/po'
-	message(f'Package locale dir = @package_localedir@')
+	package_locale_dir = meson.current_source_dir() / 'build/po'
+	message(f'Package locale dir = @package_locale_dir@')
 else
-	package_localedir = sys_locale_dir
+	package_locale_dir = sys_locale_dir
 endif
 
 
@@ -120,7 +120,7 @@ extra_flags = [
 	'-DGLIBMM_DISABLE_DEPRECATED',
 	'-DGTK_DISABLE_DEPRECATED',
 	'-DGTKMM_DISABLE_DEPRECATED',
-	'-DPACKAGE_LOCALEDIR="@0@"'.format(package_localedir),
+	'-DPACKAGE_LOCALEDIR="@0@"'.format(package_locale_dir),
 	'-Wcast-align',
 	'-Wcast-qual',
 	'-Wchar-subscripts',
